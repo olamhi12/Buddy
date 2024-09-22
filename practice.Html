@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: linear-gradient(to left , red 40% , blue 60%);
+        height: 100vh;
+        color: white;
+        text-align: center;
+    }
+    input {
+        padding: 10px;
+        border-radius: 5px;
+    }
+</style>
+<script defer>
+    
+    function SubmitResult() {
+       let Input = document.getElementById("Nmae")
+        let Score = document.getElementById("Core")
+    console.log(Input.value);
+    document.getElementById("Adams").innerHTML = `name is ${Input.value} and you scored ${Score.value}`.fontcolor("Rebeccapurple")
+    alert(`${Input.value} Right?`)
+    
+   }
+  
+    
+
+</script>
+<body>
+    <h1>sign up</h1>
+    <input type="text" placeholder="image" id="Nmae">
+    <input type="number" id="Core">
+    <button onclick="SubmitResult()">Submit</button>
+    <h1 id="Adams"></h1>
+</body>
+</html>
